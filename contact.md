@@ -1,8 +1,10 @@
 ---
 title: contact
+order: 4
+
 ---
 
-<form action="https://formspree.io/{{ site.email }}" method="POST">
+<form action= "mailto:{{ site.email | encode_email }}" method="POST">
 	<div class="fields">
 		<div class="field half first">
 			<label for="name">Name</label>
